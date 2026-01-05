@@ -3,7 +3,7 @@
     "test": "node ./module_test/test.js"
   },
   "name": "@lucasmod/pokemon.js",
-  "version": "2.1.3",
+  "version": "2.1.6",
   "description": "Versão corrigida do pokemon.js com suporte a ESM e créditos para lucasmod",
   "author": "lucasmod",
   "license": "ISC",
