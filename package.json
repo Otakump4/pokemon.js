@@ -11,12 +11,12 @@
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/musubi3/pokemon.js.git"
+    "url": "git+https://github.com/Otakump4/pokemon.js.git"
   },
   "bugs": {
-    "url": "https://github.com/musubi3/pokemon.js/issues"
+    "url": "https://github.com/Otakump4/pokemon.js/issues"
   },
-  "homepage": "musubi3.github.io/pokemon.js/",
+  "homepage": "Otakump4.github.io/pokemon.js/",
   "keywords": [
     "pokemon",
     "pokeapi",
