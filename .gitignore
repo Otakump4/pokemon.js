@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+module_test
+docs/_site
+docs/Gemfile.lock
+.npmignore
+/.vscode.npmrc

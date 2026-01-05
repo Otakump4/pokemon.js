@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script src="https://musubi3.github.io/global.js" type="module"></script>
+    <link rel="stylesheet" href="https://musubi3.github.io/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokemon.js - Biblioteca Pokémon para Node.js</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+</head>
+
+<body>
+    <div class="content project-detail">
+        <!-- HEADER HERO -->
+        <header class="project-header hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Pokémon API Wrapper</div>
+                <h1 class="hero-title">pokemon.js</h1>
+                <p class="hero-subtitle">A forma mais fácil de capturar dados Pokémon com Node.js</p>
+                
+                <div class="hero-cta">
+                    <a href="#instalacao" class="btn btn-primary">Começar Agora</a>
+                    <a href="https://github.com/Otakump4/pokemon.js.git" class="btn btn-secondary" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <span class="meta-item">👤 Lucas Mod</span>
+                <span class="meta-item">📅 Verão 2026</span>
+                <span class="meta-item">🎯 Projeto Pessoal</span>
+            </div>
+        </header>
+
+        <!-- BADGES -->
+        <div class="project-badges">
+            <a href="https://www.npmjs.com/package/@lucasmod/pokemon.js" target="_blank" class="badge-link">
+                <img src="https://img.shields.io/npm/v/pokemon.js.svg" alt="Versão NPM">
+            </a>
+            <a href="https://www.npmjs.com/package/@lucasmod/pokemon.js" target="_blank" class="badge-link">
+                <img src="https://img.shields.io/npm/dt/pokemon.js.svg" alt="Downloads NPM">
+            </a>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <nav class="toc-section">
+            <h3>📑 Navegação Rápida</h3>
+            <ul class="toc-list">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#instalacao">Instalação</a></li>
+                <li><a href="#exemplo-uso">Exemplo de Uso</a></li>
+                <li><a href="#metodos">Métodos Disponíveis</a></li>
+                <li><a href="#links">Links Úteis</a></li>
+            </ul>
+        </nav>
+
+        <!-- ABOUT SECTION -->
+        <section id="sobre" class="project-section">
+            <h2>📖 Sobre</h2>
+            <div class="section-content">
+                <p><strong>pokemon.js</strong> é um módulo <a href="https://nodejs.org" target="_blank" class="link-highlight">Node.js</a> moderno que facilita a interação com a <a href="https://pokeapi.co/" target="_blank" class="link-highlight">PokéAPI</a>.</p>
+                <p>Com uma API simples e intuitiva, você pode acessar dados de milhares de Pokémon, tipos, habilidades, movimentos e muito mais, tudo com apenas algumas linhas de código.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Rápido</h4>
+                        <p>Acesso otimizado aos dados da PokéAPI</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h4>Zero Dependências</h4>
+                        <p>Nenhuma dependência externa necessária</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h4>Fácil de Usar</h4>
+                        <p>API simples e bem documentada</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Completo</h4>
+                        <p>Acesso a todos os recursos da PokéAPI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTALLATION SECTION -->
+        <section id="instalacao" class="project-section">
+            <h2>📥 Instalação</h2>
+            <div class="section-content">
+                <p><strong>Requisitos:</strong> Node.js 12.0.0 ou mais recente</p>
+                <p><strong>Dependências:</strong> Nenhuma! 🎉</p>
+                
+                <div class="install-box">
+                    <code class="install-command">npm install @lucasmod/pokemon.js</code>
+                    <button class="copy-btn" onclick="copyToClipboard(this)">📋 Copiar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- USAGE EXAMPLE SECTION -->
+        <section id="exemplo-uso" class="project-section">
+            <h2>💡 Exemplo de Uso</h2>
+            <div class="section-content">
+                <p>Aqui está um exemplo simples para começar:</p>
+                <pre class="code-block"><code class="language-javascript">import Pokemon from '@lucasmod/pokemon.js'
+
+// Obter dados de um Pokémon
+Pokemon.get_pokemon('pikachu').then(data => {
+  console.log(data.name)
+  console.log(data.height)
+  console.log(data.weight)
+})
+
+// Obter tipo de um Pokémon
+Pokemon.get_type('pikachu', true).then(types => {
+  console.log(types)
+})
+
+// Obter linha evolutiva
+Pokemon.get_evolution_line('charmander').then(evolution => {
+  console.log(evolution)
+})</code></pre>
+            </div>
+        </section>
+
+        <!-- METHODS SECTION -->
+        <section id="metodos" class="project-section">
+            <h2>🎮 Métodos Disponíveis</h2>
+            <div class="section-content">
+                <p>Explore todos os métodos disponíveis para interagir com a PokéAPI:</p>
+                
+                <div class="method-list">
+                    <div class="card method">
+                        <div class="method-icon">🔍</div>
+                        <h3><code>get_pokemon(pokemon, fields=[])</code></h3>
+                        <p>Retorna dados completos do Pokémon em formato JSON, incluindo altura, peso, tipos, habilidades e muito mais.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">⚔️</div>
+                        <h3><code>get_type(name, is_pokemon=false, fields=[])</code></h3>
+                        <p>Retorna um Array dos tipos do Pokémon ou dados detalhados do tipo em formato JSON.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">💪</div>
+                        <h3><code>get_ability(name, is_pokemon=false, fields=[])</code></h3>
+                        <p>Retorna um Array das habilidades do Pokémon ou dados da habilidade em formato JSON.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">🔄</div>
+                        <h3><code>get_evolution_line(pokemon, fields=[])</code></h3>
+                        <p>Retorna um Array que contém toda a linha evolutiva do Pokémon, desde sua forma inicial.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">🎯</div>
+                        <h3><code>get_move(move, fields=[])</code></h3>
+                        <p>Retorna dados detalhados sobre um movimento em formato JSON, incluindo poder, precisão e tipo.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">🌿</div>
+                        <h3><code>get_nature(nature, fields=[])</code></h3>
+                        <p>Retorna um Objeto que contém os atributos aumentados e diminuídos causados pela natureza.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">🎁</div>
+                        <h3><code>get_item(item, fields=[])</code></h3>
+                        <p>Retorna dados detalhados sobre um item em formato JSON, incluindo descrição e efeitos.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">📊</div>
+                        <h3><code>get_generation(generation, fields=[])</code></h3>
+                        <p>Retorna dados sobre uma geração Pokémon específica em formato JSON.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">🗺️</div>
+                        <h3><code>get_region(region, fields=[])</code></h3>
+                        <p>Retorna dados sobre uma região Pokémon em formato JSON, incluindo Pokémon e locais.</p>
+                    </div>
+
+                    <div class="card method">
+                        <div class="method-icon">📚</div>
+                        <h3><code>get_all(type)</code></h3>
+                        <p>Retorna um Array contendo nomes de todos os recursos do tipo especificado (pokémon, tipos, itens, etc).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKS SECTION -->
+        <section id="links" class="project-section">
+            <h2>🔗 Links Úteis</h2>
+            <div class="section-content">
+                <p>Acesse os recursos relacionados ao projeto:</p>
+                <ul class="links">
+                    <li><a href="https://www.npmjs.com/package/@lucasmod/pokemon.js" target="_blank" class="tag tag-npm">📦 NPM Package</a></li>
+                    <li><a href="https://github.com/Otakump4/pokemon.js.git" target="_blank" class="tag tag-github">🐙 GitHub Repository</a></li>
+                    <li><a href="https://pokeapi.co/" target="_blank" class="tag tag-api">🔌 PokéAPI</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="project-footer">
+            <p>Feito com ❤️ para a comunidade Pokémon • <a href="https://github.com/Otakump4/pokemon.js.git" target="_blank">Contribua no GitHub</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function copyToClipboard(button) {
+            const text = button.previousElementSibling.textContent
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent
+                button.textContent = '✅ Copiado!'
+                setTimeout(() => {
+                    button.textContent = originalText
+                }, 2000)
+            })
+        }
+    </script>
+</body>
+
+</html>

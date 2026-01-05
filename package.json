@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "test": "node ./module_test/test.js"
+  },
+  "name": "@lucasmod/pokemon.js",
+  "version": "2.1.3",
+  "description": "Versão corrigida do pokemon.js com suporte a ESM e créditos para lucasmod",
+  "author": "lucasmod",
+  "license": "ISC",
+  "type": "module",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musubi3/pokemon.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/musubi3/pokemon.js/issues"
+  },
+  "homepage": "musubi3.github.io/pokemon.js/",
+  "keywords": [
+    "pokemon",
+    "pokeapi",
+    "javascript",
+    "js",
+    "api",
+    "esm"
+  ],
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
