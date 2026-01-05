@@ -25,18 +25,24 @@
 
 ## ⚡️ Sobre o Projeto
 
-Esta é uma **versão corrigida e mantida** do pacote original `pokemon.js` [1], desenvolvida por **lucasmod**.
+Esta é uma **versão corrigida e mantida** do pacote original `pokemon.js`, desenvolvida por **lucasmod**.
 
-O foco desta versão é garantir a **compatibilidade total** com as versões mais recentes do Node.js, corrigindo o problema de importação de módulos (ESM) que afetava o pacote original. `@lucasmod/pokemon.js` é um módulo **Node.js** que simplifica a interação com a [PokéAPI](https://pokeapi.co/) [2], permitindo que você acesse dados de Pokémon, habilidades, movimentos e muito mais de forma rápida e eficiente.
+O foco desta versão é garantir a **compatibilidade total** com as versões mais recentes do Node.js, corrigindo o problema de importação de módulos (ESM) que afetava o pacote original. `@lucasmod/pokemon.js` é um módulo **Node.js** que simplifica a interação com a [PokéAPI](https://pokeapi.co/), permitindo que você acesse dados de Pokémon, habilidades, movimentos e muito mais de forma rápida e eficiente.
 
 ## 🛠 Instalação
 
-**Requisito:** Node.js **12.0.0** ou superior. Nenhuma dependência externa é necessária.
+**Requisito:** Node.js **18.0.0** ou superior. Nenhuma dependência externa é necessária.
 
-Utilize o `npm` para instalar o pacote em seu projeto:
+Utilize o `npm` ou `git clone` para instalar o pacote em seu projeto:
 
 ```bash
 npm install @lucasmod/pokemon.js
+```
+
+Ou
+
+```bash
+git clone https://github.com/Otakump4/pokemon.js
 ```
 
 ## 🚀 Exemplo de Uso
@@ -83,9 +89,9 @@ Abaixo estão os métodos principais disponíveis no objeto `Pokemon`:
 
 ## 🔗 Recursos e Links
 
-*   **NPM:** [https://www.npmjs.com/package/@lucasmod/pokemon.js] [3]
-*   **GitHub (Original):** [https://github.com/musubi3/pokemon.js.git] [4]
-*   **PokéAPI (Fonte de Dados):** [https://pokeapi.co/] [2]
+*   **NPM:** [https://www.npmjs.com/package/@lucasmod/pokemon.js]
+*   **GitHub (Original):** [https://github.com/musubi3/pokemon.js.git]
+*   **PokéAPI (Fonte de Dados):** [https://pokeapi.co/]
 
 ---
 
